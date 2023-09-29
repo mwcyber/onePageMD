@@ -14,7 +14,7 @@
 
   async function loadMarkdownContent() {
     try {
-      const response = await fetch(`/src/assets/${selectedFile}`);
+      const response = await fetch(`/pages/${selectedFile}`);
       markdownContent = marked(await response.text());
     } catch (error) {
       console.error("Error loading md file:", error);
