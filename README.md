@@ -1,4 +1,4 @@
-# Cyber Index
+# Open Index
 
 ## Introduction
 
