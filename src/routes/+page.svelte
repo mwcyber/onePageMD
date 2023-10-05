@@ -3,14 +3,12 @@
   import { marked } from "marked";
 
   const files = [
-    { value: "cybersecurity.md", label: "Cybersecurity" },
-    { value: "network.md", label: "Network" },
-    { value: "develop.md", label: "Develop" },
-    { value: "privacy.md", label: "Privacy" }
+    { value: "page01.md", label: "Page one label" },
+    { value: "page02.md", label: "Page two label" }
   ];
 
   let markdownContent = "";
-  let selectedFile = "cybersecurity.md";
+  let selectedFile = files[0].value;
 
   async function loadMarkdownContent() {
     try {
@@ -31,30 +29,33 @@
 </script>
 
 {#if markdownContent}
-<div class="container">
-  <div class="nav">
-    <div class="container-fluid">
-      <div class="row align-items-center">
-        <div class="col">
-          <h5>Hi, this is my collection of useful sites and web apps divided into categories.</h5>
-        </div>
-        <div class="col">
-          <p>SELECT INDEX:<p>
-          <select bind:value={selectedFile} class="form-select">
-            {#each files as file}
-              <option value={file.value}>{file.label}</option>
-            {/each}
-          </select>
+  <div class="container">
+    <div class="nav">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col">
+            <h5>
+              Hi, welcome to onePageMD!
+            </h5>
+          </div>
+          <div class="col">
+            <p>SELECT INDEX:</p>
+            <p>
+              <select bind:value={selectedFile} class="form-select">
+                {#each files as file}
+                  <option value={file.value}>{file.label}</option>
+                {/each}
+              </select>
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <section>
-    {@html markdownContent}
-  </section>
-  
-</div>
+    <section>
+      {@html markdownContent}
+    </section>
+  </div>
 
   <style>
     body {
@@ -67,13 +68,13 @@
     section {
       flex: 1;
       margin-top: 10px;
-      padding: 10px;
+      padding: 20px;
       border: 4px solid transparent;
       border-color: white;
     }
 
     .nav {
-      background-color: #db9030 ;
+      background-color: #db9030;
       border-radius: 10px;
     }
 

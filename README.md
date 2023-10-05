@@ -1,47 +1,43 @@
-# Open Cyber Index
+# onePageMD
 
 ## Introduction
 
-Simple collection of useful sites and web apps divided by categories.
-The main categories collected are Cybersecurity and general IT.
+This project is a frontend application designed to display a series of markdown (md) files on a single page, allowing users to select and view the content of their choice. Whether you're creating documentation, a personal wiki, or any content-driven application, onePageMD simplifies the process of organizing and presenting multiple markdown files.
 
-## What is it
+## What is it?
 
-The basic project is a frontend that renders a series of md files in which the favorite sites are collected.
+This project serves as a user-friendly interface for rendering markdown files within a single web page. 
 
-The main technologies used are:
-- Svelte
-- Bootstrap
-- Marked library
+The primary technologies employed in this project include:
+
+- **Svelte:** A modern JavaScript framework for building user interfaces.
+- **Bootstrap:** A popular CSS framework for styling and layout.
+- **Marked library:** A markdown parser and compiler for JavaScript.
 
 ## How it works
 
-All md files are saved in the '/asset/pages/' folder and the main page loads them dynamically.
+All markdown files are stored in the `/asset/pages/` folder, and the main page dynamically loads and renders them. The JavaScript code on the main page manages a small list containing references to the files to be displayed. As files are added to this list, they are automatically rendered on the page.
 
-The javascript code of the main page provides in a variable a small list in which the points to the files to be shown are collected.
+To add a new page to the list, simply create the corresponding markdown file and append its details to the list in the code snippet below:
 
-The md files added to the list are rendered automatically.
-
-To create a new page in the list just create the relevant md file and add it to the following list:
-
-```
+```javascript
 const files = [
-    { value: "cybersecurity.md", label: "Cybersecurity" },
-    { value: "network.md", label: "Network" }.
-    ...
+    { value: "page01.md", label: "Page one label" },
+    { value: "page02.md", label: "Page two label" },
+    // Add more pages as needed
   ];
 ```
 
 ## Getting Started
 
-If you want to run local the website follow these steps:
+If you want to run the project locally, follow these steps:
 
 1. **Clone the Repository:**
 
-   First, clone this repository to your local machine using Git:
+   Clone this repository to your local machine using Git:
 
    ```bash
-   git clone https://github.com/your-username/mybookmarks.git
+   git clone https://github.com/your-username/project-name.git
    ```
 
 2. **Install Dependencies:**
@@ -52,7 +48,7 @@ If you want to run local the website follow these steps:
    cd <app-name>
    ```
 
-   Then, install the project dependencies using npm:
+   Install the project dependencies using npm:
 
    ```bash
    npm install
@@ -66,26 +62,20 @@ If you want to run local the website follow these steps:
    npm run dev
    ```
 
-   This command will start a local development server, usually on http://localhost:5173.
+   This command will launch a local development server, typically on http://localhost:5173.
 
 ## Contributing
 
-If you'd like to contribute to openIndex web app component, please follow these guidelines:
+If you'd like to contribute to the project, please adhere to these guidelines:
 
 1. Fork the repository and create a new branch.
 2. Make your changes and ensure that the code passes linting and testing.
 3. Submit a pull request.
 
-If you want to edit the contents of the lists to add or remove a resource:
-1. Edit the corresponding md file respecting the format
-2. Submit a pull request
-
 ## License
-Project cyberNewsBot
+
+**Project cyberNewsBot**
 
 Copyright © 2023 mwcyber
 
-This project is licensed under the Creative Commons
-Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0).
-
-You can find a copy of the license in this directory or visit [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) for more information.
+This project is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/). You can find a copy of the license in this directory or visit the provided link for more information.
