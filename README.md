@@ -66,7 +66,7 @@ If you want to run the project locally, follow these steps:
 
 ## Contributing
 
-If you'd like to contribute to the project, please adhere to these guidelines:
+If you'd like to contribute to the project, please follow to these guidelines:
 
 1. Fork the repository and create a new branch.
 2. Make your changes and ensure that the code passes linting and testing.
@@ -74,8 +74,8 @@ If you'd like to contribute to the project, please adhere to these guidelines:
 
 ## License
 
-**Project cyberNewsBot**
+**Project onePageMD**
 
 Copyright © 2023 mwcyber
 
-This project is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/). You can find a copy of the license in this directory or visit the provided link for more information.
+This project is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/). You can find a copy of the license the provided link for more information.
